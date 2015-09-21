@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- for a class taco cursor, uncomment this.
+    <style type="text/css">
+      body, a:hover {cursor: url(http://cur.cursors-4u.net/food/foo-4/foo333.cur), progress !important;}
+    </style>
+    -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="TaCo Company Website">
@@ -10,6 +15,7 @@
     <title>TaCo Company</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link href="css/global.css" rel="stylesheet">
 
   </head>
@@ -45,7 +51,14 @@
     </div> <!-- /container -->
     <footer class="footer">
       <div class="container">
-        <p class="text-muted"><br>&copy; TaCo Inc. 2015</p>
+          <span class="text-muted"><br>&copy; TaCo Inc. 2015</span>
+          <div class="elevator text-center">
+            <svg class="sweet-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" height="30px" width="30px">
+                <path d="M70,47.5H30c-1.4,0-2.5,1.1-2.5,2.5v40c0,1.4,1.1,2.5,2.5,2.5h40c1.4,0,2.5-1.1,2.5-2.5V50C72.5,48.6,71.4,47.5,70,47.5z   M47.5,87.5h-5v-25h5V87.5z M57.5,87.5h-5v-25h5V87.5z M67.5,87.5h-5V60c0-1.4-1.1-2.5-2.5-2.5H40c-1.4,0-2.5,1.1-2.5,2.5v27.5h-5  v-35h35V87.5z"/>
+                <path d="M50,42.5c1.4,0,2.5-1.1,2.5-2.5V16l5.7,5.7c0.5,0.5,1.1,0.7,1.8,0.7s1.3-0.2,1.8-0.7c1-1,1-2.6,0-3.5l-10-10  c-1-1-2.6-1-3.5,0l-10,10c-1,1-1,2.6,0,3.5c1,1,2.6,1,3.5,0l5.7-5.7v24C47.5,41.4,48.6,42.5,50,42.5z"/>
+            </svg> <span class="text-muted">Take the elevator up. </span>
+          </div>
+
       </div>
     </footer>
 
@@ -53,12 +66,12 @@
     <!-- Hidden content, to be swapped into content div with javascript -->
     <div class="hidden_content" id="home_content">
       <blockquote>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-        <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+        <p>Hands-down the best tacos in the lower southeastern area of Bozeman, MT.</p>
+        <footer>Chip Weatley -<cite title="Source Title"> The Extremely Local Food Review</cite></footer>
       </blockquote>
       <blockquote class="blockquote-reverse">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-        <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+        <p>I can't feel my face after eating their salsa. I haven't spoken to my family in a week. Please help.</p>
+        <footer>Michael Gary Scott -<cite title="Source Title"> The Great Salsa Challenge</cite></footer>
       </blockquote>
     </div>
 
@@ -86,9 +99,7 @@
       <div class="col-md-6 col-sm-12">
         <div class="media">
           <div class="media-left">
-            <a href="#">
-              <img class="media-object" src="img/kenneth_swagger.png" alt="">
-            </a>
+            <img class="media-object" src="img/kenneth_swagger.png" alt="">
           </div>
           <div class="media-body">
             <h3 class="media-heading">Kenneth Swagger</h3>
@@ -99,9 +110,7 @@
       <div class="col-md-6 col-sm-12">
         <div class="media">
           <div class="media-left">
-            <a href="#">
-              <img class="media-object" src="img/david_householter.jpg" alt="">
-            </a>
+            <img class="media-object" src="img/david_householter.jpg" alt="">
           </div>
           <div class="media-body">
             <h3 class="media-heading">David Householter</h3>
@@ -112,13 +121,11 @@
       <div class="col-md-6 col-sm-12">
         <div class="media">
           <div class="media-left">
-            <a href="#">
-              <img class="media-object" src="img/nathan_robertus.jpg" alt="">
-            </a>
+            <img class="media-object" src="img/nathan_robertus.jpg" alt="">
           </div>
           <div class="media-body">
             <h3 class="media-heading">Nathan Robertus</h3>
-            Line cook and sanitairy maintenace. 
+            Line cook and sanitairy maintenace. Also does web stuff during free time.
           </div>
         </div>
       </div>
@@ -138,7 +145,7 @@
       </div>
       <div class="col-sm-6 col-md-4">
         <div class="thumbnail">
-          <img src="img/burrito.jpg" alt="Dominator Burrito">
+          <img src="img/burrito.png" alt="Dominator Burrito">
           <div class="caption">
             <h2>The Dominator Burrito</h2>
             <h4>Like getting punched in the face</h4>
@@ -148,7 +155,7 @@
       </div>
       <div class="col-sm-6 col-md-4">
         <div class="thumbnail">
-          <img src="img/salsa.jpg" alt="7th circle salsa">
+          <img src="img/salsa.png" alt="7th circle salsa">
           <div class="caption">
             <h2>7th Circle Salsa</h2>
             <h4>Abandon all hope, ye who order here.</h4>
@@ -160,24 +167,48 @@
     <!-- CONTACT US CONTENT -->
     <div class="hidden_content" id="contact_us_content">
       <div class="col-md-6 col-sm-12">
+        <h2>Send us some love!</h2>
+        <hr>
         <address>
-          <strong>Twitter, Inc.</strong><br>
+          <strong>TaCo, Inc.</strong><br>
           795 Folsom Ave, Suite 600<br>
-          San Francisco, CA 94107<br>
+          Bozeman, MT 94107<br>
           <abbr title="Phone">P:</abbr> (123) 456-7890
         </address>
 
         <address>
-          <strong>Full Name</strong><br>
-          <a href="mailto:#">first.last@example.com</a>
+          <strong>Kenneth Swagger</strong><br>
+          <a href="mailto:#">kenneth.swagger@taco.co</a>
+        </address>
+        <address>
+          <strong>David Householter</strong><br>
+          <a href="mailto:#">david.householter@taco.co</a>
+        </address>
+        <address>
+          <strong>Nathan Robertus</strong><br>
+          <a href="mailto:#">nathan.robertus@taco.co</a>
         </address>
       </div>
+      <div class="col-md-6 col-sm-12">
+        <h2>Social media</h2>
+        <hr>
+          <table>
+            <tr><td><a href="http://www.twitter.com/taco-co"><i class="fa fa-twitter-square fa-2x" alt="twitter"></i></a></td><td><a href="https://www.twitter.com/taco-co"><h4>@taco-co</h4></a></td></tr>
+            <tr><td><a href="http://www.facebook.com/taco-co"><i class="fa fa-facebook-official fa-2x" alt="facebook"></i></a></td><td><a href="https://www.facebook.com/taco-co"><h4>/taco-co</h4></a></td></tr>
+            <tr><td><a href="http://www.github.com/nrobertus"><i class="fa fa-github-square fa-2x" alt="github"></i></a></td><td><a href="https://www.github.com/nrobertus"><h4>/nrobertus</h4></a></td></tr>
+            <tr><td><a href="#"><i class="fa fa-google-plus-square fa-2x" alt="google plus"></a></i></td><td><a href="#"><h4>/taco-co (HAHA!, just kidding, we don't use google plus.)</h4></a></td></tr>
+          </table>
+      </div>
     </div>
+
+
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    
     <script src="js/jquery.min.js"></script>
     <script src="js/global.js"></script>
-    <script src="js/bootstrap.min.js"></script
+    <script src="js/elevator.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
