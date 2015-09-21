@@ -17,7 +17,7 @@ The visual design is a simple, clean, hand-drawn look. This plays into the idea 
 
 The fonts used are AmaticSC-Regular, Amatic-Bold, and helvetica ( a bootstrap default. )
 
-The colors are #666 for big headings, #999 for small headings, #3c3c3c for hovered links, and #ccc for <hr> elements and spacing lines.
+The colors are #666 for big headings, #999 for small headings, #3c3c3c for hovered links, and #ccc for hr elements and spacing lines.
 
 The menu images are clean .png files with the item cut out and a drop shadow applied. The bio photos are simple headshots with circular frames.
 
