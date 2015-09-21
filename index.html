@@ -2,11 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+    <meta name="description" content="TaCo Company Website">
+    <meta name="author" content="Nathan Robertus">
+    <link rel="icon" href="img/favicon.ico">
 
     <title>TaCo Company</title>
 
@@ -18,39 +17,28 @@
   <body>
 
     <div class="container">
-      <div class="text-center" id="logo"><img src="img/taco_logo.svg" class="logo"/></div>
+      <div class="text-center" id="logo"><img src="img/taco_logo.svg" class="logo" alt="TaCo Logo"/></div>
       <hr>
       <div class="row" id="nav_row">
         
 
         <div class="text-center col-md-3 col-sm-12 nav_item">
-          <a href="#">Home</a>
+          <a href="#" onclick="toggleContent(this, this.innerHTML)">Home</a>
         </div>
         <div class="text-center col-md-3 col-sm-12 nav_item">
-          <a href="#">About Us</a>
+          <a href="#" onclick="toggleContent(this, this.innerHTML)">About Us</a>
         </div>
         <div class="text-center col-md-3 col-sm-12 nav_item">
-          <a href="#">Menu</a>
+          <a href="#" onclick="toggleContent(this, this.innerHTML)">Menu</a>
         </div>
         <div class="text-center col-md-3 col-sm-12 nav_item">
-          <a href="#">Contact Us</a>
+          <a href="#" onclick="toggleContent(this, this.innerHTML)">Contact Us</a>
         </div>
     </div>
     <hr>
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4 col-sm-12">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-        </div>
-        <div class="col-md-4 col-sm-12">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-       </div>
-        <div class="col-md-4 col-sm-12">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        </div>
+      
+      <div class="row" id="body_content">
+          <!-- Body content will be swapped through here -->
       </div>
 
       <hr>
@@ -61,10 +49,135 @@
       </div>
     </footer>
 
+
+    <!-- Hidden content, to be swapped into content div with javascript -->
+    <div class="hidden_content" id="home_content">
+      <blockquote>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+      </blockquote>
+      <blockquote class="blockquote-reverse">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+      </blockquote>
+    </div>
+
+    <!-- ABOUT US CONTENT -->
+    <div class="hidden_content" id="about_us_content">
+      <div class="col-sm-12 col-md-12">
+        <h2>Our Mission</h2>
+        <hr>
+      </div>
+      <div class="col-md-12 col-sm-12">
+        <p>
+        Here at TaCo, we strive to creat the best dang tacos known to man. We realize this is a lofty goal, but we believe that if you shoot for the stars, you might just end up creating tacos instead. Some might even call them "stellar tacos." 
+        </p>
+        <p>
+        In addition to tacos, we are aiming to take the grand prize for the worlds spiciest salsa, as well as the world's meatiest burrito. Seriously, our salsa could probably put you in a coma, and the burritos are approaching the density of a dying star. As you can imagine, our worker's compensation insuance is through the roof. 
+        </p>
+        <p>
+        </p>
+      </div>
+      <div class="col-sm-12 col-md-12">
+        <h2>Personnel</h2>
+        <hr>
+      </div>
+
+      <div class="col-md-6 col-sm-12">
+        <div class="media">
+          <div class="media-left">
+            <a href="#">
+              <img class="media-object" src="img/kenneth_swagger.png" alt="">
+            </a>
+          </div>
+          <div class="media-body">
+            <h3 class="media-heading">Kenneth Swagger</h3>
+            Owner, master of ceremonies, and holder of the key to the sacred salsa vault. 
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div class="media">
+          <div class="media-left">
+            <a href="#">
+              <img class="media-object" src="img/david_householter.jpg" alt="">
+            </a>
+          </div>
+          <div class="media-body">
+            <h3 class="media-heading">David Householter</h3>
+            Manager, leader, and public figure. Programming magician.
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div class="media">
+          <div class="media-left">
+            <a href="#">
+              <img class="media-object" src="img/nathan_robertus.jpg" alt="">
+            </a>
+          </div>
+          <div class="media-body">
+            <h3 class="media-heading">Nathan Robertus</h3>
+            Line cook and sanitairy maintenace. 
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MENU CONTENT -->
+    <div class="hidden_content" id="menu_content">
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img src="img/tacos.png" alt="Softshell tacos">
+          <div class="caption">
+            <h2>Softshell Tacos</h2>
+            <h4>Angelic and fluffy, just like God intended.</h4>
+            <p>Shells so soft, you will think you are eating a pillow. Only its a pillow filled with beef. Mmmmm, beef pillow.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img src="img/burrito.jpg" alt="Dominator Burrito">
+          <div class="caption">
+            <h2>The Dominator Burrito</h2>
+            <h4>Like getting punched in the face</h4>
+            <p>This burrito is so massive and dense, that if you can still speak after taking your first bite, we will give you your money back. Probably.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img src="img/salsa.jpg" alt="7th circle salsa">
+          <div class="caption">
+            <h2>7th Circle Salsa</h2>
+            <h4>Abandon all hope, ye who order here.</h4>
+            <p>This salsa is not for the faint of heart. It will tortue your soul in ways that even Dante could not describe. Order at your own risk.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CONTACT US CONTENT -->
+    <div class="hidden_content" id="contact_us_content">
+      <div class="col-md-6 col-sm-12">
+        <address>
+          <strong>Twitter, Inc.</strong><br>
+          795 Folsom Ave, Suite 600<br>
+          San Francisco, CA 94107<br>
+          <abbr title="Phone">P:</abbr> (123) 456-7890
+        </address>
+
+        <address>
+          <strong>Full Name</strong><br>
+          <a href="mailto:#">first.last@example.com</a>
+        </address>
+      </div>
+    </div>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/global.js"></script>
     <script src="js/bootstrap.min.js"></script
   </body>
 </html>

@@ -39,10 +39,25 @@ hr{
   height:1px;
   background-color:#ccc;
 }
+h1{
+  font-family:AmaticBold;
+  color:#666;
+  font-size:35px;
+}
 h2{
   font-family:AmaticBold;
   color:#666;
   font-size:30px;
+}
+h3{
+  font-family:Amatic;
+  color:#999;
+  font-size:26px;
+}
+h4{
+  font-family:Amatic;
+  color:#999;
+  font-size:23px;
 }
 #nav_row a{
   font-family:AmaticBold;
@@ -58,10 +73,23 @@ h2{
   color:#3c3c3c;
   text-decoration: underline;
 }
-
-
+.media{
+    padding-top:10px;
+  }
+.hidden_content{
+  display:none;
+}
+.media-object{
+  border-radius: 100%;
+}
+p{
+  text-indent:1em;
+}
+blockquote{
+  background-color:rgba(255, 255, 255, 0.2);
+}
 /* ----------- Small devices ----------- */
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 989px) {
   .logo{
     width:95%;
   }
@@ -72,16 +100,25 @@ h2{
   hr:nth-child(1){
     margin-bottom:0px;
   }
+  .media-object{
+    width:80px;
+    height:80px;
+  }
+
 }
 
 /* ----------- Large devices ----------- */
-@media screen and (min-width: 1200px) { 
+@media screen and (min-width: 990px) { 
   .logo{
     width:40%;
   }
   #nav_row div:not(:last-child){
     border-right-style: solid;
     border-right: thin solid #ccc;
+  }
+  .media-object{
+    width:110px;
+    height:110px;
   }
 }
 
