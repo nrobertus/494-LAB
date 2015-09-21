@@ -38,3 +38,9 @@ The Contact Us page has an address, emails for the staff, and social media links
 ##Key words and informational phrases
 
 tacos, food, bozeman, local, taco company, kenneth swagger, 
+
+##Bonus features
+
+There's a section in the header of index.html that is commented out right now. If you uncomment that, the cursor is a taco.
+
+At the bottom of the page, there is an elevator button. If resize the window so that the page is very long, scroll to the bottom, and click the elevator button, it will play some elevator music, scroll to the top, and ding when you get there. 
