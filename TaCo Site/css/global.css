@@ -7,19 +7,28 @@
     font-family: AmaticBold;
     src: url(../fonts/Amatic-Bold.ttf);
 }
-/* ----------- Global rules ----------- */
+/* ----------- Document rules ----------- */
+
+/* Global Styles */
 body{
   background-image: url(../img/concrete_seamless_2.png);
+  margin-bottom: 60px;
 }
 html {
   position: relative;
   min-height: 100%;
 }
-body {  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+p{
+  text-indent:1em;
 }
 #content{/* hide horizontal scrollbar*/
   overflow:hidden
+}
+.hidden_content{
+  display:none;
+}
+.wrapper{
+  width:100%;
 }
 .footer {
   position: absolute;
@@ -30,9 +39,6 @@ body {  /* Margin bottom by footer height */
 }
 .logo{
   padding-top:10px;
-}
-.wrapper{
-  width:100%;
 }
 hr{
   border:none;
@@ -59,6 +65,8 @@ h4{
   color:#999;
   font-size:23px;
 }
+
+/* Navigation Styles */
 #nav_row a{
   font-family:AmaticBold;
   text-transform:uppercase;
@@ -73,30 +81,45 @@ h4{
   color:#3c3c3c;
   text-decoration: underline;
 }
-.media{
-    padding-top:10px;
-  }
-.hidden_content{
-  display:none;
-}
-.media-object{
-  border-radius: 100%;
-}
-p{
-  text-indent:1em;
-}
+
+/* Home Styles */
 blockquote{
   background-color:rgba(255, 255, 255, 0.2);
 }
-a:hover{
-  text-decoration: none;
+
+/* About Us Styles */
+.media-object{
+  border-radius: 100%;
 }
-td{
-  padding-left:5px;
+.media{
+  padding-top:10px;
 }
+
+/* Menu Styles */
 .thumbnail{
   background-color: rgba(255, 255, 255, 0.3);
 }
+
+/* Contact Us Styles */
+#social_media_table a:hover{
+  text-decoration: none;
+}
+#social_media_table td{
+  padding-left:5px;
+}
+#hours_table{
+  font-size:29px;
+}
+#hours_table th{
+  padding-left:30px;
+  font-family:AmaticBold;
+  font-weight:10px;
+}
+#hours_table td{
+  padding-left:20px;
+  font-family:Amatic;
+}
+
 /* ----------- Small devices ----------- */
 @media screen and (max-width: 989px) {
   .logo{
