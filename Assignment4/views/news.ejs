@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/news.css" />
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <script src = "/js/jquery.js"></script>
+    <script src = "/js/bootstrap.js"></script>
+    <script src = "/js/global.js"></script>
+    
+</head>
+<body>
+    <h1><%= title %></h1>
+    <ul class="nav nav-tabs">
+      <li role="presentation" class="nav_tab" id="home_tab"><a href="/">Home</a></li>
+      <li role="presentation" class="active nav_tab" id="news_tab"><a href="news">News</a></li>
+    </ul>
+
+<ul>
+    <% for(var i=0; i<data.length; i++) {
+        var post = data[i];
+    %>
+    <% if(i < 10){ 
+    %>
+        <li class="news_item_first">
+            <div class = "panel-body">
+    <%}%>
+
+    <% if(i > 9){ 
+    %>
+        <li class="news_item">
+            <div>
+    <%}%>
+    
+
+        <% if(post.type == "news"){
+        %>
+            <h2><a href=<%= post.url %> > <%= post.heading  %> </a></h2>
+            <p class = "news_content"><h4><%= post.content %></h4></p>
+            <p class = "news_author news_sub"><%= post.author %></p>
+            <p class = "news_email "><%= post.email %></p>
+            
+
+        <%}%>
+
+        <% if(post.type == "picture"){
+        %>
+            <img class="news_image" alt = "<%= post.content %> <%= post.datePublished %>" src="<%=post.imgUrl%>" />
+        <%}%>
+
+        <% if(post.type == "link"){
+        %>
+                <p class = "news_link_content"><%= post.content %></p>
+                <p class = "news_link_date"><%= Date(post.datePublished) %></p>
+                <br>
+        <%}%>
+        </div>
+    </li>
+    <% } %>
+</ul>
+</body>
+</html>
