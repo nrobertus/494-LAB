@@ -1,0 +1,17 @@
+.news_image{
+	width:250px;
+	float:left;
+	margin-right:20px;
+	margin-top:5px;
+}
+ul{
+	list-style: none;
+}
+.news_sub{
+	margin-bottom:1px;
+}
+.news_author, .news_email{
+	color:#79797F;
+}
+.news_item_first{
+}
