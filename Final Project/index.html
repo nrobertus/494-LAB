@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- for a classy taco cursor, uncomment this.
+    <style type="text/css">
+      body, a:hover {cursor: url(http://cur.cursors-4u.net/food/foo-4/foo333.cur), progress !important;}
+    </style>
+    -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="TaCo Company Website">
+    <meta name="author" content="Nathan Robertus">
+    <link rel="icon" href="img/favicon.ico">
+
+    <title>TaCo Company</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="css/global.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div class="container">
+      <a onclick="toggleContent(this, 'Home')"><div class="text-center" id="logo"><img src="img/taco_logo.svg" class="logo" alt="TaCo Logo"/></div></a>
+      <hr>
+      <div class="row" id="nav_row">
+
+
+        <div class="text-center col-md-3 col-sm-12 nav_item">
+          <a href="#" alt="home"onclick="toggleContent(this, this.innerHTML)">Home</a>
+        </div>
+        <div class="text-center col-md-3 col-sm-12 nav_item">
+          <a href="#" alt="About Us" onclick="toggleContent(this, this.innerHTML)">About Us</a>
+        </div>
+        <div class="text-center col-md-3 col-sm-12 nav_item">
+          <a href="#" alt="Menu" onclick="toggleContent(this, this.innerHTML)">Menu</a>
+        </div>
+        <div class="text-center col-md-3 col-sm-12 nav_item">
+          <a href="#" alt="Contact Us" onclick="toggleContent(this, this.innerHTML)">Contact Us</a>
+        </div>
+    </div>
+    <hr>
+
+      <div class="row" id="body_content">
+          <!-- Body content will be swapped through here -->
+      </div>
+
+      <hr>
+    </div> <!-- /container -->
+    <footer class="footer">
+      <div class="container">
+          <span class="text-muted"><br>&copy; TaCo Inc. 2015</span>
+          <div class="elevator text-center">
+            <svg class="sweet-svg" alt="elevator icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" height="30px" width="30px">
+                <path d="M70,47.5H30c-1.4,0-2.5,1.1-2.5,2.5v40c0,1.4,1.1,2.5,2.5,2.5h40c1.4,0,2.5-1.1,2.5-2.5V50C72.5,48.6,71.4,47.5,70,47.5z   M47.5,87.5h-5v-25h5V87.5z M57.5,87.5h-5v-25h5V87.5z M67.5,87.5h-5V60c0-1.4-1.1-2.5-2.5-2.5H40c-1.4,0-2.5,1.1-2.5,2.5v27.5h-5  v-35h35V87.5z"/>
+                <path d="M50,42.5c1.4,0,2.5-1.1,2.5-2.5V16l5.7,5.7c0.5,0.5,1.1,0.7,1.8,0.7s1.3-0.2,1.8-0.7c1-1,1-2.6,0-3.5l-10-10  c-1-1-2.6-1-3.5,0l-10,10c-1,1-1,2.6,0,3.5c1,1,2.6,1,3.5,0l5.7-5.7v24C47.5,41.4,48.6,42.5,50,42.5z"/>
+            </svg> <span class="text-muted">Take the elevator up. </span>
+          </div>
+
+      </div>
+    </footer>
+
+
+    <!-- Hidden content, to be swapped into content div with javascript -->
+    <div class="hidden_content" id="home_content">
+      <div id="home_content_container">
+        <div class = "blockquote_div">
+          <blockquote class="blockquote_span" alt="Food review">
+            <span>Hands-down the best tacos in the lower southeastern area of Bozeman, MT.</span>
+            <footer>Chip Weatley -<cite title="Source Title"> The Extremely Local Food Review</cite></footer>
+          </blockquote>
+        </div>
+        <div class = "blockquote_div blockquote_div_right">
+          <blockquote class="blockquote-reverse blockquote_span blockquote_right" alt = "Food review">
+            <span>I can't feel my face after eating their salsa. I haven't spoken to my family in a week. Please help.</span>
+            <footer>Michael Gary Scott -<cite title="Source Title"> The Great Salsa Challenge</cite></footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT US CONTENT -->
+    <div class="hidden_content" id="about_us_content">
+      <div class="col-sm-12 col-md-12">
+        <h2>Our Mission</h2>
+        <hr>
+      </div>
+      <div class="col-md-12 col-sm-12" alt="mission statement">
+        <p>
+        Here at TaCo, we strive to creat the best dang tacos known to man. We realize this is a lofty goal, but we believe that if you shoot for the stars, you might just end up creating tacos instead. Some might even call them "stellar tacos."
+        </p>
+        <p>
+        In addition to tacos, we are aiming to take the grand prize for the worlds spiciest salsa, as well as the world's meatiest burrito. Seriously, our salsa could probably put you in a coma, and the burritos are approaching the density of a dying star. As you can imagine, our worker's compensation insuance is through the roof.
+        </p>
+        <p>
+        </p>
+      </div>
+      <div class="col-sm-12 col-md-12">
+        <h2>Personnel</h2>
+        <hr>
+      </div>
+
+      <div class="col-md-6 col-sm-12">
+        <div class="media">
+          <div class="media-left">
+            <img class="media-object" src="img/kenneth_swagger.png" alt="">
+          </div>
+          <div class="media-body">
+            <h3 class="media-heading">Kenneth Swagger</h3>
+            Owner, master of ceremonies, and holder of the key to the sacred salsa vault.
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div class="media">
+          <div class="media-left">
+            <img class="media-object" src="img/david_householter.jpg" alt="">
+          </div>
+          <div class="media-body">
+            <h3 class="media-heading">David Householter</h3>
+            Manager, leader, and public figure. Programming magician.
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div class="media">
+          <div class="media-left">
+            <img class="media-object" src="img/nathan_robertus.jpg" alt="">
+          </div>
+          <div class="media-body">
+            <h3 class="media-heading">Nathan Robertus</h3>
+            Line cook and sanitairy maintenace. Also does web stuff during free time.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MENU CONTENT -->
+    <div class="hidden_content" id="menu_content">
+      <div class="col-sm-6 col-md-4"  data-toggle="modal" data-target = "#tacoModal">
+        <div class="thumbnail">
+          <img src="img/tacos.png" alt="Softshell tacos">
+          <div class="caption">
+            <h2>Softshell Tacos</h2>
+            <h4>Angelic and fluffy, just like God intended.</h4>
+            <p>Shells so soft, you will think you are eating a pillow. Only its a pillow filled with beef. Mmmmm, beef pillow.</p>
+            <hr>
+            <p class="text-muted price text-right">$9.98 for 3</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4" data-toggle="modal" data-target = "#burritoModal">
+        <div class="thumbnail">
+          <img src="img/burrito.png" alt="Dominator Burrito">
+          <div class="caption">
+            <h2>The Dominator Burrito</h2>
+            <h4>Like getting punched in the face</h4>
+            <p>This burrito is so massive and dense, that if you can still speak after taking your first bite, we will give you your money back. Probably.</p>
+            <hr>
+            <p class="text-muted price text-right">$12.98</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4" data-toggle="modal" data-target = "#salsaModal">
+        <div class="thumbnail">
+          <img src="img/salsa.png" alt="7th circle salsa">
+          <div class="caption">
+            <h2>7th Circle Salsa</h2>
+            <h4>Abandon all hope, ye who order here.</h4>
+            <p>This salsa is not for the faint of heart. It will tortue your soul in ways that even Dante could not describe. Order at your own risk.</p>
+            <hr>
+            <p class="text-muted price text-right">$5.98</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CONTACT US CONTENT -->
+    <div class="hidden_content" id="contact_us_content">
+      <div class="col-md-6 col-sm-12">
+        <h2>Send us some love!</h2>
+        <hr>
+        <address>
+          <strong>TaCo, Inc.</strong><br>
+          795 Folsom Ave, Suite 600<br>
+          Bozeman, MT 94107<br>
+          <abbr title="Phone">P:</abbr> (406) 599-1203
+        </address>
+
+        <address>
+          <strong>Kenneth Swagger</strong><br>
+          <a href="mailto:#">kenneth.swagger@taco.co</a>
+        </address>
+        <address>
+          <strong>David Householter</strong><br>
+          <a href="mailto:#">david.householter@taco.co</a>
+        </address>
+        <address>
+          <strong>Nathan Robertus</strong><br>
+          <a href="mailto:#">nathan.robertus@taco.co</a>
+        </address>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <h2>Social media</h2>
+        <hr>
+          <table id="social_media_table">
+            <tr><td><a href="http://www.twitter.com"><i class="fa fa-twitter-square fa-2x" alt="twitter"></i></a></td><td><a href="https://www.twitter.com"><h4>@taco-co</h4></a></td></tr>
+            <tr><td><a href="http://www.facebook.com"><i class="fa fa-facebook-official fa-2x" alt="facebook"></i></a></td><td><a href="https://www.facebook.com"><h4>/taco-co</h4></a></td></tr>
+            <tr><td><a href="http://www.github.com/nrobertus"><i class="fa fa-github-square fa-2x" alt="github"></i></a></td><td><a href="https://www.github.com/nrobertus"><h4>/nrobertus</h4></a></td></tr>
+            <tr><td><a href="#"><i class="fa fa-google-plus-square fa-2x" alt="google plus"></a></i></td><td><a href="#"><h4>/taco-co (HAHA!, just kidding, we don't use google plus.)</h4></a></td></tr>
+          </table>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <h2>Hours</h2>
+        <hr>
+          <table id="hours_table">
+            <tr><th></th><th>Open</th><th>Close</th></tr>
+            <tr><td>Monday-Thursday</td><td>10:00 AM</td><td>9:00 PM</td></tr>
+            <tr><td>Friday</td><td>10:00 AM</td><td>11:00 PM</td></tr>
+            <tr><td>Saturday</td><td>10:00 AM</td><td>10:00 PM</td></tr>
+            <tr><td>Sundday</td><td>10:00 AM</td><td>10:00 PM</td></tr>
+          </table>
+      </div>
+    </div>
+
+    <div id = "included_content">
+      <!-- taco modal -->
+      <div class="modal fade" id="tacoModal" tabindex="-1" role="dialog" aria-labelledby="Taco Modal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h2 class="modal-title" id="tacoModalLabel">Softshell Tacos</h2>
+            </div>
+            <div class="modal-body">
+              <div class="thumbnail">
+                <img src="img/tacos.png" alt="Softshell tacos">
+                <div class="caption">
+                  <h3>Angelic and fluffy, just like God intended.</h3>
+                  <p>Shells so soft, you will think you are eating a pillow. Only its a pillow filled with beef. Mmmmm, beef pillow.</p>
+                  <hr>
+                  <h3> Order options </h3>
+                  <table class="table table-hover">
+                    <tr><th>Size</th><th>Feeds</th><th>Price</th></tr>
+                    <tr><td>3 tacos</td><td>1 person</td><td>$9.98</td></tr>
+                    <tr><td>9 tacos</td><td>3 - 4 people</td><td>$23.98</td></tr>
+                    <tr><td>All the tacos we have</td><td>All the people you have</td><td>Determined at POS</td></tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- burrito modal -->
+      <div class="modal fade" id="burritoModal" tabindex="-1" role="dialog" aria-labelledby="Burrito Modal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h2 class="modal-title" id="burritoModalLabel">The Dominator Burrito</h2>
+            </div>
+            <div class="modal-body">
+              <div class="thumbnail">
+                <img src="img/burrito.png" alt="Dominator Burrito">
+                <div class="caption">
+                  <h3>Like getting punched in the face</h3>
+                  <p>This burrito is so massive and dense, that if you can still speak after taking your first bite, we will give you your money back. Probably.</p>
+                  <hr>
+                  <h3> Order options </h3>
+                  <table class="table table-hover">
+                    <tr><th>Size</th><th>Feeds</th><th>Price</th></tr>
+                    <tr><td>Large</td><td>1 large person</td><td>$12.98</td></tr>
+                    <tr><td>Larger</td><td>2 large people / Andre the Giant</td><td>$20.98</td></tr>
+                    <tr><td>Largest</td><td>4 large people / 1 small army</td><td>$30.98</td></tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- salsa modal -->
+      <div class="modal fade" id="salsaModal" tabindex="-1" role="dialog" aria-labelledby="7th Circle Modal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h2 class="modal-title" id="salsaModalLabel">7th Circle Salsa</h2>
+            </div>
+            <div class="modal-body">
+              <div class="thumbnail">
+                <img src="img/salsa.png" alt="7th circle salsa">
+                <div class="caption">
+                  <h3>Abandon all hope, ye who order here.</h3>
+                  <p>This salsa is not for the faint of heart. It will tortue your soul in ways that even Dante could not describe. Order at your own risk.</p>
+                  <hr>
+                  <h3> Order options </h3>
+                  <table class="table table-hover">
+                    <tr><th>Size</th><th>Feeds</th><th>Price</th></tr>
+                    <tr><td>Small</td><td>1 - 2 people</td><td>$5.98</td></tr>
+                    <tr><td>Medium</td><td>3 - 5 people</td><td>$8.98</td></tr>
+                    <tr><td>Large</td><td>6 - 10 people</td><td>$11.98</td></tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.smoothscroll.min.js"></script>
+    <script src="js/global.js"></script>
+    <script src="js/elevator.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
