@@ -67,59 +67,59 @@ In the "menu" tab, if a menu item is clicked on, a modal will appear with additi
 ####Functional, readable code
 All of the .css is categorized, as well as the javascript. Barely any javascript was written, as it was very efficient to use jQuery.
 
-##Fast load times
+###Fast load times
 	
-###Reduce and reuse code in .js/html/css
+####Reduce and reuse code in .js/html/css
 This was done judiciously. Most of the .css rules are used in multiple locations. Implementation of the Bootstrap framework was also very helpful in this.
 
-###Reduce download size of the images
+####Reduce download size of the images
 The main logo is incredibly fast to download, as it is an svg, not an actual image format. The largest images does take a bit to download, but the site is still complete in the meantime.
 I also reduced the largest image I was using from 4.34 MB to 0.32 MB when I converted it to grayscale. Both are included, but only the grayscale version is downloaded.
 
-###Implement minificaiton on the server
+####Implement minificaiton on the server
 All imported javascript libraries are minified. My javascript file is only 17 lines long, so I didn't feel the need to minify it.
 
-##Compatibility with other browsers
+###Compatibility with other browsers
 
-###Use vendor prefixes for .css that is not supported on all browsers
+####Use vendor prefixes for .css that is not supported on all browsers
 This is done in many places to keep things working in Chrome, Firefox, Opera and Internet Explorer / Edge
 
-###Don't use .js functions that aren't supported by all browsers.
+####Don't use .js functions that aren't supported by all browsers.
 I did not.
 
-###Don’t code the HTML / CSS poorly so that it might work in Chrome and not IE
+####Don’t code the HTML / CSS poorly so that it might work in Chrome and not IE
 I did my best to not code anything poorly.
 
-###Provide shims to retrofits older browsers for modern CSS and HTML
+####Provide shims to retrofits older browsers for modern CSS and HTML
 This was done in a few places in global.css.
 
-#Content Elements
+##Content Elements
 	
-##Effective site content free from spelling and grammatical errors
+###Effective site content free from spelling and grammatical errors
 I did my best to spell-check and proofread everything. 
 
-##Carefully chosen words and clear statement from the strategy
+###Carefully chosen words and clear statement from the strategy
 The strategy details the tone and vibe I wanted to present with the site, and the language chosen reflects that.
 
-##Clear call to action areas and buttons
+###Clear call to action areas and buttons
 While this is a site for a restaurant, I did my best to implement this. The menu items change color on hover, in an attempt to make it clear that they are clickable.
 
-##Website sections and categories present information in a way that is easy for users to find.
+###Website sections and categories present information in a way that is easy for users to find.
 The entire site is very simple, so hopefully it is not difficult to navigate.
 
-#Functional elements
+##Functional elements
 
-##Navigation that appear consistent on all browsers and devices
+###Navigation that appear consistent on all browsers and devices
 Because it is responsive, this is the case. I have tested it on any many devices as I can, and I havent broken it yet.
 
-##Quickly locate content that is important for the target users.
+###Quickly locate content that is important for the target users.
 The tabs help users do this categorically. 
 
-##Can a user scan through key parts of the page quickly
+###Can a user scan through key parts of the page quickly
 Yes, they are clean, and don't have much non-essential information. In the menu, more can be gathered upon request, but only essential information is available initally.
 
-##Multiple ways to find content with good internal linking
+###Multiple ways to find content with good internal linking
 Each page can be accessed from any other page. The modals can be closed by click the "close" button or clicking outside the modal.
 
-##Overall organization and how easy it is for to use.
+###Overall organization and how easy it is for use.
 The whole site is laid out in a generally sensible manner, and shouldn't be too confusing to use.
